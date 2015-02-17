@@ -82,6 +82,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Contiero.ControleFinanceiro.Dominio\Contiero.ControleFinanceiro.Dominio.csproj">
       <Project>{49b4a912-8fb7-4847-9bd6-d00ed1a527bc}</Project>
       <Name>Contiero.ControleFinanceiro.Dominio</Name>
@@ -90,9 +93,6 @@
       <Project>{1dcce00d-9012-48ab-98d9-5b4e267eaf4c}</Project>
       <Name>Contiero.ControleFinanceiro.Web</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

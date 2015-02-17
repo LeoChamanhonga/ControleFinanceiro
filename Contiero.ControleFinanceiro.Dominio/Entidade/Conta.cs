@@ -11,6 +11,6 @@ namespace Contiero.ControleFinanceiro.Dominio.Entidade
         public int Conta_ID { get; set; }
         public string Nome { get; set; }
         public int Agencia { get; set; }
-        public string Conta { get; set; }
+        public string NumConta { get; set; }
     }
 }
