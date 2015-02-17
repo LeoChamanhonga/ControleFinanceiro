@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Contiero.ControleFinanceiro.Dominio.Entidade.Conta>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Agencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumConta)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Agencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumConta)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Conta_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Conta_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Conta_ID })
+        </td>
+    </tr>
+}
+
+</table>
