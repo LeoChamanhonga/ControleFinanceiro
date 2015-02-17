@@ -9,6 +9,7 @@ namespace Contiero.ControleFinanceiro.UnitTest
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }
