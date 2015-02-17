@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Contiero.ControleFinanceiro.Dominio.Repositorio
 {
-    class ContasRepositorio
+    public class ContasRepositorio
     {
         private readonly EfDbContext _context = new EfDbContext();
 

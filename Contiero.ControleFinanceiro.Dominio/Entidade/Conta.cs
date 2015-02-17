@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Contiero.ControleFinanceiro.Dominio.Entidade
 {
-    class Conta
+    public class Conta
     {
         public int Conta_ID { get; set; }
         public string Nome { get; set; }
